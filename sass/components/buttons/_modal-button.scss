@@ -1,0 +1,49 @@
+.modal__button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+
+  appearance: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  background-color: var(--main-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    fill: var(--accent-color);
+  }
+}
+
+.modal__button-icon {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: transparent;
+
+  background-color: var(--main-background-color);
+}
+
+.modal-form__primary-button {
+  width: 200px;
+  position: absolute;
+  bottom: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  &:focus,
+  &:hover {
+    box-shadow: var(--shadow-big);
+
+    transition-property: color;
+    transition: 250ms var(--timing-function);
+  }
+}

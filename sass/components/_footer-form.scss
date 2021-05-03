@@ -1,0 +1,61 @@
+.footer-subcription {
+  margin-left: auto;
+}
+.subcription-form {
+  display: flex;
+  align-items: baseline;
+}
+.footer-subcription__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--second-text-color);
+}
+.subcription-form__email {
+  width: 358px;
+  height: 50px;
+
+  padding-left: 16px;
+
+  font-family: Roboto;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  transition-property: box-shadow;
+  transition: 250ms var(--timing-function);
+
+  background-color: inherit;
+  color: #ffffff;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:hover,
+  &:focus {
+    box-shadow: var(--shadow-litle);
+  }
+}
+.subcription-form--disposition {
+  position: relative;
+}
+.subcription-form__icon {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+}

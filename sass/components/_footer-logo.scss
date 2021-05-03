@@ -1,0 +1,27 @@
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo__link {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  align-items: center;
+  text-decoration: none;
+
+  color: #000000;
+}
+.footer-logo__text1 {
+  margin: 0;
+  padding: 0;
+
+  color: var(--second-text-color);
+}
+.footer-logo__text2 {
+  margin: 0;
+  padding: 0;
+
+  color: var(--accent-color);
+}

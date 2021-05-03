@@ -1,0 +1,91 @@
+.team-block {
+  padding: 94px 0px;
+  background-color: var(--section-bg-color);
+}
+.team-block__name {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.team-block__list {
+  display: flex;
+}
+.team-blok__description {
+  margin: 0;
+}
+.team-card {
+  display: flex;
+
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 30px;
+
+  color: #afb1b8;
+}
+.team-block__item {
+  width: 270px;
+  text-align: center;
+
+  box-shadow: var(--shadow-big);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--second-text-color);
+  & + .team-block__item {
+    margin-left: 30px;
+  }
+}
+.team-block__image {
+  margin-bottom: 30px;
+}
+
+.team-block__title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.team-card__link {
+  width: 44px;
+  height: 44px;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  fill: currentColor;
+
+  color: #afb1b8;
+
+  transition-property: fill, color;
+  transition: 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-bg-color);
+    box-shadow: var(--shadow-litle);
+  }
+  & + .team-card__link {
+    margin-left: 10px;
+  }
+}
+.team-card__icon {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background-size: contain;
+}

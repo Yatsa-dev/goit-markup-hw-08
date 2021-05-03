@@ -1,0 +1,22 @@
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.section-holder {
+  padding: 94px 0px;
+  background-color: var(--section-bg-color);
+}
+.works {
+  padding-bottom: 94px;
+}
+.features {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.our-clients {
+  padding: 94px 0px;
+}

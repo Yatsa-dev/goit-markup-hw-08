@@ -1,0 +1,18 @@
+.primary-filter {
+  padding: 94px 0px;
+}
+.primary-filter__list {
+  justify-content: center;
+  display: flex;
+
+  padding-bottom: 50px;
+}
+
+.primary-filter__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  & + .primary-filter__item {
+    margin-left: 8px;
+  }
+}
