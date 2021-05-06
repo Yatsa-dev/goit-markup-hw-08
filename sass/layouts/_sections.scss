@@ -9,18 +9,39 @@
 .section-holder {
   padding: 60px 0px;
   background-color: var(--section-bg-color);
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
 .works {
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 .features {
   padding-bottom: 60px;
   padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
 .team-block {
   padding: 60px 0px;
   background-color: var(--section-bg-color);
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
 .our-clients {
   padding: 60px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
+}
+.primary-filter {
+  padding: 60px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
