@@ -1,5 +1,8 @@
 .footer-logo {
   margin-bottom: 20px;
+  @media screen and (min-width: 0px) and (max-width: 767.98px) {
+    text-align: center;
+  }
 }
 
 .footer-logo__link {

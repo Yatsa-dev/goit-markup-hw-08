@@ -3,8 +3,6 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
   padding-top: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
@@ -17,9 +15,13 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
-  @media screen and (min-width: 0px) and (max-width: 767.98) {
+  @media screen and (min-width: 0px) {
     width: 450px;
     height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 581px;
   }
 }
 .modal__title {

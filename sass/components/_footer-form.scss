@@ -1,10 +1,10 @@
-.footer-subcription {
-  margin-left: auto;
-}
-.subcription-form {
-  display: flex;
-  align-items: baseline;
-}
+// .footer-subcription {
+//   margin-left: auto;
+// }
+// .subcription-form {
+//   display: flex;
+//   align-items: baseline;
+// }
 .footer-subcription__title {
   margin-bottom: 20px;
 
@@ -15,11 +15,13 @@
   text-transform: uppercase;
 
   color: var(--second-text-color);
+  @media screen and (min-width: 0px) and (max-width: 767.98px) {
+    text-align: center;
+  }
 }
 .subcription-form__email {
-  width: 358px;
   height: 50px;
-
+  max-width: 450px;
   padding-left: 16px;
 
   font-family: Roboto;
@@ -37,6 +39,11 @@
   background-color: inherit;
   color: #ffffff;
 
+  @media screen and (min-width: 0px) and (max-width: 767.98px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   &::placeholder {
     font-weight: 400;
     font-size: 16px;
@@ -53,9 +60,9 @@
 .subcription-form--disposition {
   position: relative;
 }
-.subcription-form__icon {
-  position: absolute;
-  right: 28px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+// .subcription-form__icon {
+//   position: absolute;
+//   left: 158px;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }

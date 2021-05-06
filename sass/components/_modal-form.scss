@@ -27,7 +27,13 @@
   }
   &:nth-child(-n + 3) {
     height: 40px;
-    width: 448px;
+
+    @media screen and (min-width: 0px) {
+      width: 370px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 448px;
+    }
   }
 }
 
@@ -69,7 +75,6 @@
   margin-bottom: 20px;
 
   height: 120px;
-  width: 448px;
   resize: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -78,6 +83,12 @@
 
   transition-property: border;
   transition: 250ms var(--timing-function);
+  @media screen and (min-width: 0px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 448px;
+  }
   &::placeholder {
     font-weight: normal;
     font-size: 14px;
@@ -155,12 +166,18 @@
 .modal-form__text-agreement1 {
   padding-left: 22px;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.7;
 
   letter-spacing: 0.03em;
 
   color: (var--) var(--primary-text-color);
+
+  @media screen and (min-width: 0px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 .modal-form__text-agreement2 {
   text-decoration: underline;
