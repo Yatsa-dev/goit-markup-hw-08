@@ -11,20 +11,20 @@
 }
 
 .team-blok__description {
-  margin: 0;
+  margin-bottom: 16px;
 }
 .team-card {
   display: flex;
+  justify-content: center;
 
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 
   color: #afb1b8;
 }
 .team-block__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: calc(-1 * var(--item-interval));
 }
 .team-block__item {
@@ -36,15 +36,25 @@
 
   background-color: var(--second-text-color);
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 0px) and (max-width: 767.98px) {
+    margin-left: var(--item-interval);
+    margin-bottom: var(--item-interval);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
     margin-left: var(--item-interval);
     flex-basis: calc(100% / 1 - var(--item-interval));
   }
-  @media screen and (min-width: 767px) and (max-width: 1199.98px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     margin-left: var(--item-interval);
     flex-basis: calc(100% / 2 - var(--item-interval));
+    &:nth-of-type(-n + 2) {
+      margin-bottom: 30px;
+    }
   }
-
   @media screen and (min-width: 1200px) {
     margin-left: var(--item-interval);
     flex-basis: calc(100% / 4 - var(--item-interval));
