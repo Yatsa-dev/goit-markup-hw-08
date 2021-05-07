@@ -1125,9 +1125,10 @@ ul {
   display: flex;
 }
 
-.header-contacts__list {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .header-contacts__list {
+    display: flex;
+  }
 }
 
 .header-contacts__icon {
@@ -1145,8 +1146,16 @@ ul {
   fill: var(--accent-color);
 }
 
-.header-contacts__item + .header-contacts__item {
-  padding-left: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__item:not(:last-child) + .header-contacts__item {
+    padding-left: 50px;
+  }
 }
 
 .header-contacts__link {
