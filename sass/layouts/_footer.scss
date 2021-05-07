@@ -4,15 +4,25 @@
 
   background-color: var(--second-bg-color);
 }
-// .footer-disposition {
-//   // display: flex;
-//   // flex-direction: column;
-//   // justify-content: center;
-// }
-.footer-navigation {
-  // align-items: center;
-  // justify-content: flex-start;
 
+.footer-disposition {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    position: relative;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer-navigation {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-left: 76px;
+    display: inline-block;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
   background-color: var(--second-bg-color);
 }
 .footer-navigation__list {
@@ -20,9 +30,15 @@
     text-align: center;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-bottom: 60px;
+  }
 }
 .footer-navigation__item:first-child {
   margin-bottom: 9px;
+  @media screen and (min-width: 0px) and (max-width: 1199.98px) {
+    margin-bottom: 8px;
+  }
 }
 
 .footer-navigation__link {
@@ -41,10 +57,18 @@
     color: var(--accent-color);
   }
 }
-// .footer-social {
-//   margin-left: 70px;
-//   margin-right: auto;
-// }
+.footer-social {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    position: absolute;
+    top: 5px;
+    right: 89px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}
+
 .footer-social__list {
   display: flex;
   @media screen and (min-width: 0px) and (max-width: 767.98px) {
@@ -67,7 +91,7 @@
   text-transform: uppercase;
 
   color: var(--second-text-color);
-  @media screen and (min-width: 0px) and (max-width: 767.98px) {
+  @media screen and (min-width: 0px) and (max-width: 1199.98px) {
     text-align: center;
   }
 }
@@ -97,6 +121,10 @@
 
 .footer__address {
   margin-bottom: 9px;
+
+  @media screen and (min-width: 0px) and (max-width: 1199.98px) {
+    margin-bottom: 8px;
+  }
 }
 .footer__address--text {
   margin: 0;
@@ -110,5 +138,8 @@
   color: var(--second-text-color);
   @media screen and (min-width: 0px) and (max-width: 767.98px) {
     text-align: center;
+  }
+  @media screen and (min-width: 0px) and (max-width: 1199.98px) {
+    margin-bottom: 8px;
   }
 }

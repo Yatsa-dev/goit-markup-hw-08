@@ -3,10 +3,9 @@
   height: 50px;
 
   padding-left: 29px;
-  position: absolute;
-  bottom: auto;
-  left: 50%;
-  transform: translateX(-50%);
+  // position: absolute;
+  // left: 50%;
+  // transform: translateX(-50%);
 
   font-family: Roboto;
   font-weight: 700;
@@ -22,9 +21,14 @@
 
   background-color: #2196f3;
   color: #ffffff;
-  @media screen and (min-width: 0px) and (max-width: 767.98px) {
+  @media screen and (min-width: 0px) and (max-width: 1199.98px) {
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media screen and (min-width: 1200px) {
   }
 
   &:hover,
@@ -33,10 +37,8 @@
   }
 }
 .subcription-form__icon {
-  @media screen and (min-width: 0px) and (max-width: 767.98px) {
-    position: absolute;
-    top: 50%;
-    right: 28px;
-    transform: translateY(-50%);
-  }
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
 }
