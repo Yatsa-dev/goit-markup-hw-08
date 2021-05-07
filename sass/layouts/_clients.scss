@@ -19,10 +19,8 @@
 .our-clients__item {
   cursor: pointer;
   box-sizing: border-box;
-  border-radius: 4px;
-  fill: currentColor;
 
-  border: 1px solid #afb1b8;
+  fill: currentColor;
 
   justify-content: center;
   align-items: center;
@@ -31,10 +29,7 @@
 
   transition-property: fill, color;
   transition: 250ms var(--timing-function);
-  &:focus,
-  &:hover {
-    border: 1px solid #2196f3;
-  }
+
   @media screen and (min-width: 0px) and (max-width: 479.98px) {
     margin-left: var(--item-interval);
     margin-bottom: var(--item-interval);
@@ -67,6 +62,9 @@
   width: 100%;
   height: 90px;
 
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+
   background-size: contain;
   display: flex;
   justify-content: center;
@@ -82,6 +80,7 @@
   &:focus {
     border-radius: 4px;
     fill: var(--accent-color);
+    border: 1px solid #2196f3;
 
     box-shadow: var(--shadow-litle);
   }
