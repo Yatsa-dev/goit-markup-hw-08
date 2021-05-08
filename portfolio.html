@@ -39,6 +39,12 @@
                         </li>
                     </ul>
                 </div>
+                <button class="mobile-button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+                    <svg class="mobile-button--disposition" aria-label="Переключатель мобильного меню" width="40" height="40">
+                        <use class="icon-menu-burger" href="./images/sprite.svg#menu-burger"></use>
+                        <use class="icon-menu-close" href="./images/sprite.svg#menu-close"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <!-- Уникальный контент -->
@@ -58,8 +64,13 @@
                             <li class="cards-work__item">
                                 <a class="cards-work__link" href="#">
                                     <div class="cards-work__overlay">
-                                        <img class="cards-work__image" src="./images/img5-1.jpg" alt="ноутбук" width="370" height="294">
-                                        <div class="cards-work__thumb">
+                                        <picture>
+                                        <source srcset="./images/desktop/portfolio1_1x.jpg 1x, ./images/desktop/portfolio1_2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/tablet/portfolio1_1x.jpg 1x, ./images/tablet/portfolio1_2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/mobile/portfolio1_1x.jpg 1x, ./images/mobile/portfolio1_2x.jpg 2x" media="(max-width:767px)">
+                                        <img class="cards-work__image" src="./images/img5-1.jpg" alt="ноутбук" width="450">
+                                    </picture>
+                                        <div class="cards-work__thumb"> 
                                             <div class="cards-work__text">
                                                 <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                                     для цифрового
@@ -273,6 +284,46 @@
                             </div>
                         </div>
                     </footer>
+                    <div class="menu is open page-container" id="menu" data-menu>
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="./index.html">Студия</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li>
+                                <a class="menu-list__link" href="#">Контакты</a>
+                            </li class="menu-list__item">
+                        </ul>
+                        <div class="menu-disposition">
+                            <ul class="menu-contacts-list">
+                                <li class="menu-contacts-list__item">
+                                    <a class="menu-contacts-list__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                                </li>
+                                <li class="menu-contacts-list__item">
+                                    <a class="menu-contacts-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                </li>
+                            </ul>
+                            <ul class="menu-social-list">
+                                <li class="menu-social-list__item">
+                                    <a class="menu-social-list__link" href="#">Instagram
+                                    </a>
+                                </li>
+                                <li class="menu-social-list__item">
+                                    <a class="menu-social-list__link" href="#">Twitter
+                                    </a>
+                                </li>
+                                <li class="menu-social-list__item">
+                                    <a class="menu-social-list__link" href="#">Facebook
+                                    </a>
+                                </li>
+                                <li class="menu-social-list__item">
+                                    <a class="menu-social-list__link" href="#">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <script src="./js/menu.js"></script>
     </body>
 </html>
