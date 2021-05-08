@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  position: relative;
 }
 .header--border {
   border-bottom: 1px solid #ececec;
@@ -13,6 +14,9 @@
   align-items: center;
   display: flex;
   margin-left: 93px;
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 .navigation__item + .navigation__item {
   padding-left: 50px;
@@ -22,6 +26,9 @@
   margin-left: auto;
   align-items: center;
   display: flex;
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 .header-contacts__list {
   @media screen and (min-width: 768px) {

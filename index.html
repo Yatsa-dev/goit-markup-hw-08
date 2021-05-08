@@ -40,7 +40,14 @@ lang="ru">
                             </li>
                         </ul>
                     </div>
+                    <button class="mobile-button is-open" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+                        <svg class="mobile-button--disposition" aria-label="Переключатель мобильного меню" width="40" height="40">
+                            <use class="icon-menu-burger" href="./images/sprite.svg#menu-burger"></use>
+                            <use class="icon-menu-close" href="./images/sprite.svg#menu-close"></use>
+                        </svg>
+                    </button>
                 </div>
+                
             </header>
             <main class="main">
                 <!--Герой-->
@@ -417,8 +424,51 @@ lang="ru">
                 </div>
             </div>
 
-            <script src="./js/modal.js"></script>
-            <script src="./js/menu.js"></script>
+
+
+            <div class="menu is-open page-container" id= "menu" data-menu>
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <a class="menu-list__link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="menu-list__link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li>
+                        <a class="menu-list__link" href="#">Контакты</a>
+                    </li class="menu-list__item">
+                </ul>
+               <div class="menu-disposition">
+                    <ul class="menu-contacts-list">
+                        <li class="menu-contacts-list__item">
+                            <a class="menu-contacts-list__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="menu-contacts-list__item">
+                            <a class="menu-contacts-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-social-list">
+                        <li class="menu-social-list__item">
+                            <a class="menu-social-list__link" href="#">Instagram
+                            </a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a class="menu-social-list__link" href="#">Twitter
+                            </a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a class="menu-social-list__link" href="#">Facebook
+                            </a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a class="menu-social-list__link" href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+               </div>
+               
+            </div>
+         <script src="./js/modal.js"></script>
+         <script src="./js/menu.js"></script>
     </body>
 </html>
 
