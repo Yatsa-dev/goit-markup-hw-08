@@ -27,10 +27,12 @@
   color: #afb1b8;
 }
 .team-block__list {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-left: calc(-1 * var(--item-interval));
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .team-block__item {
   text-align: center;
